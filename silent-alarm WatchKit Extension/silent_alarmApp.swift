@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct silent_alarmApp: App {
+    @WKExtensionDelegateAdaptor private var extensionDelegate: ExtensionDelegate
+    
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {

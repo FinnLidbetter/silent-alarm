@@ -27,6 +27,7 @@
 		B6B5B32427E6777A00498A12 /* silent_alarm_WatchKit_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B5B32327E6777A00498A12 /* silent_alarm_WatchKit_AppTests.swift */; };
 		B6B5B32E27E6777A00498A12 /* silent_alarm_WatchKit_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B5B32D27E6777A00498A12 /* silent_alarm_WatchKit_AppUITests.swift */; };
 		B6B5B33027E6777A00498A12 /* silent_alarm_WatchKit_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B5B32F27E6777A00498A12 /* silent_alarm_WatchKit_AppUITestsLaunchTests.swift */; };
+		B6B5B34C27E80E9900498A12 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B5B34B27E80E9900498A12 /* ExtensionDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +128,8 @@
 		B6B5B32927E6777A00498A12 /* silent-alarm WatchKit AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "silent-alarm WatchKit AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B5B32D27E6777A00498A12 /* silent_alarm_WatchKit_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = silent_alarm_WatchKit_AppUITests.swift; sourceTree = "<group>"; };
 		B6B5B32F27E6777A00498A12 /* silent_alarm_WatchKit_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = silent_alarm_WatchKit_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B6B5B34B27E80E9900498A12 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		B6B5B34D27E8150000498A12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +209,7 @@
 		B6B5B2D827E6777700498A12 /* silent-alarm */ = {
 			isa = PBXGroup;
 			children = (
+				B6B5B34D27E8150000498A12 /* Info.plist */,
 				B6B5B2D927E6777700498A12 /* silent_alarmApp.swift */,
 				B6B5B2DB27E6777700498A12 /* ContentView.swift */,
 				B6B5B2DD27E6777900498A12 /* Assets.xcassets */,
@@ -255,6 +259,7 @@
 				B6B5B30E27E6777A00498A12 /* NotificationController.swift */,
 				B6B5B31027E6777A00498A12 /* NotificationView.swift */,
 				B6B5B31227E6777A00498A12 /* ComplicationController.swift */,
+				B6B5B34B27E80E9900498A12 /* ExtensionDelegate.swift */,
 				B6B5B31427E6777A00498A12 /* Assets.xcassets */,
 				B6B5B31927E6777A00498A12 /* Info.plist */,
 				B6B5B31A27E6777A00498A12 /* PushNotificationPayload.apns */,
@@ -567,6 +572,7 @@
 			files = (
 				B6B5B30F27E6777A00498A12 /* NotificationController.swift in Sources */,
 				B6B5B30D27E6777A00498A12 /* ContentView.swift in Sources */,
+				B6B5B34C27E80E9900498A12 /* ExtensionDelegate.swift in Sources */,
 				B6B5B31327E6777A00498A12 /* ComplicationController.swift in Sources */,
 				B6B5B30B27E6777A00498A12 /* silent_alarmApp.swift in Sources */,
 				B6B5B31127E6777A00498A12 /* NotificationView.swift in Sources */,
@@ -748,7 +754,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "silent-alarm WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "silent-alarm WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = silent_alarm_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -779,7 +785,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "silent-alarm WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "silent-alarm WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = silent_alarm_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -861,6 +867,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"silent-alarm/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "silent-alarm/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -891,6 +898,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"silent-alarm/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "silent-alarm/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
